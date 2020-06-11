@@ -16,13 +16,3 @@ management:
       base-path: /actuator/
 server:
   port: 8080
-
-spring:
-  application:
-    name: scdf-scala
-  cloud:
-    stream:
-      function:
-        bindings:
-          passthroughlog-in-0: input
-          passthroughlog-out-0: output
