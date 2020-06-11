@@ -1,4 +1,4 @@
-package com.example.scdfscala
+package com.example.scdfscala.processor
 
 import java.util.function.Function
 

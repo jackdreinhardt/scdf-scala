@@ -15,7 +15,7 @@ management:
     web:
       base-path: /actuator/
 server:
-  port: 8080
+  port: 8083
 
 spring:
   application:
@@ -24,5 +24,20 @@ spring:
     stream:
       function:
         bindings:
-          passthroughlog-in-0: input
-          passthroughlog-out-0: output
+          helloworld2-out-0: helloworld
+          passthroughlog-in-0: helloworld
+          passthroughlog-out-0: passthroughlog
+          logsink-in-0: passthroughlog
+      kafka:
+        binder:
+          brokers: 34.68.203.248:31090,35.188.41.191:31090,35.188.55.75:31090
+#        bindings:
+#          helloworld-out-0:
+#            destination: helloworld
+#          passthroughlog-in-0:
+#            destination: helloworld
+#          passthroughlog-out-0:
+#            destination: passthroughlog
+#          log-in-0:
+#            destination: passthroughlog
+

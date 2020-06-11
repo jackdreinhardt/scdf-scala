@@ -6,8 +6,8 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.6.RELEASE)
 
-2020-06-11 03:38:27.586  INFO 7 --- [           main] com.example.scdfscala.PassThroughLog$    : Starting PassThroughLog. on pass-through-log-test-pass-through-log-v16-76d5dbf6f6-krn4v with PID 7 (/scdf-scala-0.0.1.SNAPSHOT.jar started by root in /)
-2020-06-11 03:38:27.591  INFO 7 --- [           main] com.example.scdfscala.PassThroughLog$    : No active profile set, falling back to default profiles: default
+2020-06-11 03:38:27.586  INFO 7 --- [           main] com.example.scdfscala.processor.PassThroughLog$    : Starting PassThroughLog. on pass-through-log-test-pass-through-log-v16-76d5dbf6f6-krn4v with PID 7 (/scdf-scala-0.0.1.SNAPSHOT.jar started by root in /)
+2020-06-11 03:38:27.591  INFO 7 --- [           main] com.example.scdfscala.processor.PassThroughLog$    : No active profile set, falling back to default profiles: default
 2020-06-11 03:38:38.030  INFO 7 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
 2020-06-11 03:38:38.051  INFO 7 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
 2020-06-11 03:38:38.061  INFO 7 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
@@ -371,7 +371,7 @@
 2020-06-11 03:39:00.439  INFO 7 --- [container-0-C-1] o.s.c.s.b.k.KafkaMessageChannelBinder$1  : anonymous.23e079bb-1e80-4480-9d1f-0a1fe914196e: partitions revoked: []
 2020-06-11 03:39:00.440  INFO 7 --- [container-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=anonymous.23e079bb-1e80-4480-9d1f-0a1fe914196e] (Re-)joining group
 2020-06-11 03:39:00.661  INFO 7 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-06-11 03:39:00.664  INFO 7 --- [           main] com.example.scdfscala.PassThroughLog$    : Started PassThroughLog. in 37.915 seconds (JVM running for 41.248)
+2020-06-11 03:39:00.664  INFO 7 --- [           main] com.example.scdfscala.processor.PassThroughLog$    : Started PassThroughLog. in 37.915 seconds (JVM running for 41.248)
 2020-06-11 03:39:03.544  INFO 7 --- [container-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=anonymous.23e079bb-1e80-4480-9d1f-0a1fe914196e] Successfully joined group with generation 1
 2020-06-11 03:39:03.560  INFO 7 --- [container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=anonymous.23e079bb-1e80-4480-9d1f-0a1fe914196e] Setting newly assigned partitions: input-0
 2020-06-11 03:39:03.578  INFO 7 --- [container-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=anonymous.23e079bb-1e80-4480-9d1f-0a1fe914196e] Found no committed offset for partition input-0
