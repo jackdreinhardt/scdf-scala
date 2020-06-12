@@ -2,7 +2,7 @@ info:
   artifact: scdf-scala
   name: scdf-scala
   description: Spring Cloud Data Flow Scala
-  version: 0.0.1.SNAPSHOT
+  version: 0.0.2.SNAPSHOT
 
 management:
   health:
@@ -14,12 +14,12 @@ management:
   endpoints:
     web:
       base-path: /actuator/
+      exposure:
+        include: '*'
 server:
   port: 8080
 
 spring:
-  application:
-    name: scdf-scala
   cloud:
     stream:
       function:

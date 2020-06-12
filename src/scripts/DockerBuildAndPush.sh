@@ -4,8 +4,8 @@ echo "Building jar"
 gradle assemble
 
 IMAGE_NAME=pass-through-log
-VERSION=0.0.1.SNAPSHOT
-JAR=scdf-scala-0.0.1.SNAPSHOT.jar
+VERSION=0.0.2.SNAPSHOT
+JAR=scdf-scala-$VERSION.jar
 
 echo "Building docker image"
 docker build -t $IMAGE_NAME:$VERSION --build-arg JAR=$JAR .
